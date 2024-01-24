@@ -2,56 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Verification</title>
+    <title>Mayon</title>
     <style>
-        #copyButton {
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            padding: 8px;
-            border: none;
-            border-radius: 4px;
-            display: none; /* Hide the button by default */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Mayon</h1>
+    </header>
 
-<script>
-    function checkUser() {
-        var user_input = prompt("First Name");
+    <div class="content">
+        <p>Welcome to the Mayon website. Explore and enjoy!</p>
+        
+        <!-- Add an image with the source attribute pointing to your image file -->
+        <img src="path/to/your/image.jpg" alt="Mayon Image" style="max-width: 100%; height: auto;">
 
-        if (user_input && user_input.toLowerCase() === "ezri") {
-            var message = "I Like you Ezri";
-            alert(message);
-            showCopyButton(); // Display the copy button
-            copyToClipboard(message);
-        } else {
-            alert("Sorry, that's not the expected answer.");
-        }
-    }
+        <!-- Add more content or features as needed -->
+    </div>
 
-    function showCopyButton() {
-        var copyButton = document.getElementById("copyButton");
-        copyButton.style.display = "inline-block"; // Display the button
-    }
-
-    function copyToClipboard(text) {
-        var textarea = document.createElement("textarea");
-        textarea.value = text;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-    }
-
-    // Call the function when the page loads
-    window.onload = checkUser;
-</script>
-
-<button id="copyButton" onclick="copyToClipboard('ᜋᜒᜃ᜔ ᜀᜐᜑ ᜈᜒᜆᜇ')">Copy</button>
-
+    <footer>
+        &copy; 2024 Mayon
+    </footer>
 </body>
 </html>
