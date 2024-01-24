@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliment Generator</title>
+    <title>Mayon</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,10 @@
             padding: 10px;
         }
 
+        h1 {
+            margin: 0;
+        }
+
         .content {
             padding: 20px;
         }
@@ -31,37 +35,27 @@
             bottom: 0;
             width: 100%;
         }
-
-        button {
-            padding: 10px;
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Compliment Generator</h1>
+        <h1>Mayon</h1>
     </header>
 
     <div class="content">
-        <p id="compliment">Welcome! What's your name?</p>
-        <input type="text" id="nameInput" placeholder="Enter your name">
-        <button onclick="generateCompliment()">Generate Compliment</button>
+        <p>Wassup Mayonays!</p>
+        
+        <!-- Mayon Image -->
+        <img src="Image/mayon.jpeg" alt="Mayon Image" style="max-width: 100%; height: auto;">
+
+        <!-- Sloth Image -->
+        <img src="Image/sloth.jpg" alt="Sloth Image" style="max-width: 100%; height: auto;">
+      
+         <!-- Add more content or features as needed -->
     </div>
 
     <footer>
-        &copy; 2024 Compliment Generator
+        &copy; 2024 Mayon
     </footer>
-
-    <script>
-        function generateCompliment() {
-            var name = document.getElementById('nameInput').value;
-            var compliment = "I like you, " + name + "!";
-            document.getElementById('compliment').innerText = compliment;
-        }
-    </script>
 </body>
 </html>
